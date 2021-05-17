@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import "var";
+@import "mixin";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include main-body;
+}
+
+.container-fluid {
+  width: 90%;
+  margin: auto;
+}
+
+.live, .head {
+  @include live-head;
+}
+
+.table-responsive {
+  margin-bottom: 2rem;
+  max-height: 700px;
+  box-shadow: rgba(0,0,0,0.25) 0px 25px 50px -12px;
+}
+
+tr:hover {
+  background-color: #ffa;
+}
+
+td,th {
+  position: relative;
+}
+
+.table td,
+.table th {
+  padding: 0.75rem;
+  vertical-align: top;
+  text-align: center;
+  border-top: none;
+}
+
+td:hover::after,
+th:hover::after {
+  content: "";
+  position: absolute;
+  background-color: #f2f2f2;
+  left: 0;
+  top: -5000px;
+  height: 5000px;
+  width: 100%;
+  z-index: -1;
+}
+
+.table tr td:hover:nth-child(4) {
+  background-color: rgb(231, 83, 115);
+  color: aliceblue;
+  border: 0.5px solid rgb(12,12,12);
+}
+
+.table tr td:hover {
+  background-color: rgb(117, 223, 122);
+  color: aliceblue;
+  border: 0.5px solid rgb(12,12,12);
+}
+
+.thead-dark {
+  font-weight: bolder;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding-bottom: 0;
+}
+
+th {
+text-align: center;
+}

@@ -1,0 +1,37 @@
+@mixin main-body {
+  margin: 0;
+  color: rgb(9,9,9);
+  background: rgb(223,223,223);
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin grid-main-item {
+  height: 150px;
+  margin-bottom: 30px;
+  padding: 20px;
+  text-align: $center;
+  box-shadow: 0px 2px 10px 0px #aaa;
+}
+
+@mixin hover-effects {
+  
+}
+
+@mixin grid-layout {
+ display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+}
+
+@mixin live-head {
+  letter-spacing: 2px;
+  text-align: $center;
+}
+
+@mixin grid-h4 {
+  text-shadow: 2px 10px 20px black;
+  font-size: 3rem;
+  margin-top: 0;
+}
